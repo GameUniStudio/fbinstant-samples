@@ -60,6 +60,12 @@ $ yarn run-dist --project sending-messages
 ```
 This will run the **`sending-messages`** project with HTTPS from localhost and embed it into [our embedded player](https://developers.facebook.com/docs/games/instant-games/test-publish-share) which allows you to connect to the latest version of the SDK. All data returned from the SDK will be authentic an updated. In order to use this option, you need to correctly set the `FB_appId` property on `config.json`.  If the app shows stuck in 0% loading, make sure to visit `https://localhost:8000` and follow the instructions on your browser trust the development certificates.
 
+## Work flow test 
+1. Create app in developer
+2. upload build zip file -> publish
+3. Make https localhost
+4. Test [/player ](https://www.facebook.com/embed/instantgames/YOUR_GAME_ID/player?game_url=https://localhost:8080)
+
 ```bash
 $ yarn upload --project ads
 ```
